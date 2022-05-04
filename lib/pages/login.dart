@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
         );
-      } else if (error.code == 'user does not have a password.') {
+      } else if (error.code == 'wrong-password.') {
         print('Wrong password provider by the users');
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
